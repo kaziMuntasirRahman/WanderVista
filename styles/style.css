@@ -53,7 +53,7 @@ nav {
 }
 
 .icon-head-section img {
-  height: calc(35 / 1440 * 100vw);
+  height: calc(30 / 1440 * 100vw);
   min-height: 80%;
 }
 
@@ -228,7 +228,6 @@ main {
   flex-wrap: wrap;
   gap: calc(24 / 1440 * 100vw);
   margin-top: 24px;
-  border: 2px solid red;
 }
 
 .image-container div {
@@ -329,6 +328,51 @@ main {
   background: rgba(233, 68, 68, 0.05);
   grid-column: span 2;
 }
+
+/* why choose me section done alhamdulillah */
+/* footer section start */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+  padding: calc(110 / 1440 * 100vw) calc(135 / 1440 * 100vw);
+}
+
+footer>:nth-child(2) {
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  /* 162.5% */
+  margin: 15px 0 33px 0;
+  max-width: 40vw;
+}
+
+footer>.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: calc(32 / 1440 * 100vw);
+  margin-bottom: 50px;
+}
+
+footer>:last-child {
+  color: #131318;
+  font-family: 'Inter', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+footer hr {
+  width: 45vw;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.10);
+}
+
 
 
 
@@ -442,7 +486,26 @@ main {
     grid-column: 1;
   }
 
-  .choose-container>h3{
+  .choose-container>h3 {
     font-size: 1.25rem;
   }
+
+  .icon-head-section>h1{
+    font-size: calc(21.5rem / 16);
+  }
+
+  footer>:nth-child(2){
+    font-size: calc(14rem / 16);
+    line-height: 1.5rem;
+    max-width: 80vw;
+  }
+
+  footer>:last-child{
+    font-size: calc(14rem / 16);
+  }
+
+  footer hr{
+    width: 80vw;
+  }
+
 }
