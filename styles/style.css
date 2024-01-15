@@ -21,14 +21,15 @@
   color: #FFF;
   border-radius: 8px;
   background: #FF5400;
-  min-width: calc(174 / 1440 * 100vw);
+  width: 174px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: calc(14 / 1440 * 100vw) 0;
+  padding: 16px 0;
   text-align: center;
   font-size: 1rem;
   font-weight: 700;
+  border: 0;
   gap: 8px;
   cursor: pointer;
 }
@@ -144,7 +145,61 @@ nav {
   font-weight: 400;
 }
 
+/* banner section as well as header section start */
+/* main section start */
+/* popular section start */
+main {
+  padding: calc(135 / 1440 * 100vw);
+}
 
+.popular-tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: end;
+  gap: calc(53 / 1440 * 100vw);
+}
+
+.popular-tour img {
+  max-width: 100%;
+}
+
+.popular-tour-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: calc(24 / 1440 * 100vw);
+}
+
+.popular-tour-desc h1 {
+  color: #131318;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.popular-tour-desc {
+  color: rgba(19, 19, 24, 0.70);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  /* 162.5% */
+}
+
+.popular-tour-desc>:nth-child(4) {
+  max-width: calc(530 / 1440 * 100vw);
+}
+
+.popular-tour-desc li {
+  list-style-position: inside;
+}
+
+.popular-tour-desc li:nth-child(2) {
+  margin: calc(16 / 1440 * 100vw) 0;
+}
+
+.popular-tour button{
+  font-size: 1.25rem;
+}
 
 
 
@@ -204,9 +259,24 @@ nav {
     padding: 16px;
   }
 
-  .banner form>button{
+  .banner form>button {
     width: 100%;
     padding: 16px 0;
+  }
+
+  main{
+    padding: 24px 20px;
+  }
+
+  .popular-tour {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    gap: calc(53 / 1440 * 100vw);
+  }
+
+  .popular-tour-desc>:nth-child(4) {
+    max-width: 100%;
   }
 
 }
