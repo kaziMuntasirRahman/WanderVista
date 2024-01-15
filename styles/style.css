@@ -231,9 +231,22 @@ main {
   border: 2px solid red;
 }
 
-.image-container>*{
-  background-size: cover;
-  background-repeat: no-repeat;
+.image-container div {
+  position: relative;
+}
+
+.image-container div h1 {
+  position: absolute;
+  color: #FFF;
+  font-size: 1.75rem;
+  font-weight: 800;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -314,8 +327,13 @@ main {
     max-width: 100%;
   }
 
-  .destination h1{
+  .destination h1 {
     font-size: 1.25rem;
+  }
+
+  .image-container div {
+    width: 100%;
+    height: calc(287 / 600 * 100vw);
   }
 
   .image-container img{
