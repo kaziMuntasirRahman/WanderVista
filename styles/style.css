@@ -250,6 +250,90 @@ main {
 }
 
 
+/* why choose us section start */
+.why-choose-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(100 / 1440 * 100vw);
+}
+
+.why-choose-us>h1 {
+  color: #131318;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.why-choose-us>p {
+  color: rgba(19, 19, 24, 0.70);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  max-width: 643px;
+  margin: 24px 0;
+}
+
+.choose-div-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+
+.choose-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: rgba(19, 19, 24, 0.70);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: calc(26rem / 16);
+  /* 162.5% */
+  max-width: 643px;
+  padding: 32px 55px 32px 32px;
+}
+
+.choose-container>h3 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 32px 0 16px 0;
+}
+
+.choose-container>p {
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.choose-container:first-child {
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.20);
+  background: rgba(251, 181, 99, 0.05);
+}
+
+.choose-container:nth-child(2) {
+  border-radius: 16px;
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background: rgba(41, 206, 246, 0.05);
+}
+
+.choose-container:last-child {
+  border-radius: 16px;
+  border: 1px solid rgba(233, 68, 68, 0.20);
+  background: rgba(233, 68, 68, 0.05);
+  grid-column: span 2;
+}
+
+
+
+
+
 
 
 
@@ -336,8 +420,29 @@ main {
     height: calc(287 / 600 * 100vw);
   }
 
-  .image-container img{
+  .image-container img {
     width: 100%;
     height: calc(287 / 600 * 100vw);
+  }
+
+  .why-choose-us>h1 {
+    font-size: 1.25rem;
+  }
+
+  .why-choose-us p {
+    font-size: calc(14rem / 16);
+  }
+
+  .choose-div-container {
+    grid-template-columns: 1fr;
+    padding-right: 32px;
+  }
+
+  .choose-container:last-child {
+    grid-column: 1;
+  }
+
+  .choose-container>h3{
+    font-size: 1.25rem;
   }
 }
