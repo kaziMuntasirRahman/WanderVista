@@ -145,10 +145,10 @@ nav {
 
 /* banner section as well as header section start */
 /* main section start */
-/* popular section start */
 main {
-  padding: 100px calc(135 / 1440 * 100vw);
+  padding: calc(100 / 1440 * 100vw) calc(135 / 1440 * 100vw);
 }
+/* popular section start */
 
 .popular-tour {
   display: grid;
@@ -189,10 +189,11 @@ main {
 
 .popular-tour-desc li {
   list-style-position: inside;
+  line-height: 1.5rem;
 }
 
 .popular-tour-desc li:nth-child(2) {
-  margin: calc(16 / 1440 * 100vw) 0;
+  margin: 16px 0;
 }
 
 .popular-tour button {
@@ -352,7 +353,7 @@ main {
   gap: calc(20 / 1440 * 100vw);
   border-radius: 100px;
   background: linear-gradient(to right, #9dff0083, rgba(255, 255, 0, 0.007));
-  box-shadow: 5px 5px 10px #5A5A5D;
+  box-shadow: 2px 2px 1px #5A5A5D;
 }
 
 .user img:hover{
@@ -375,6 +376,7 @@ main {
 
 .user-review>h1{
   font-weight: 700;
+  margin: 0;
 }
 
 .user-review>p{
@@ -440,8 +442,6 @@ main {
   font-size: 1rem;
   font-weight: 400;
 }
-
-
 
 .newsletter .form-container>button {
   margin-top: 8px;
@@ -551,7 +551,6 @@ footer hr {
 
 
 
-
 @media screen and (max-width: 600px) {
   .nav-links {
     content: url('../Images/menu-bar.svg');
@@ -560,12 +559,16 @@ footer hr {
     margin: auto 0;
   }
 
+  .banner{
+    margin-top: 19px;
+  }
+
   .banner h1 {
     font-size: 1.5rem;
   }
 
   .banner p {
-    margin-bottom: 32px;
+    margin: calc(8 / 600 * 100vw) 0 calc(32 / 600 * 100vw) 0;
   }
 
   .banner form>input, .banner form select {
@@ -599,6 +602,10 @@ footer hr {
     grid-template-columns: 1fr;
     justify-items: end;
     gap: calc(53 / 1440 * 100vw);
+  }
+
+  .popular-tour-desc h1{
+    margin-bottom: 16px;
   }
 
   .popular-tour-desc>:nth-child(4) {
@@ -647,11 +654,15 @@ footer hr {
   }
 
   .user-experience-container>h1, .user-review>h2{
-    transform: scale(.8);
+    transform: scale(.75);
   }
 
   .user{
     gap: 5px;
+  }
+
+  .user img{
+    transform: scale(.9);
   }
 
   .newsletter{
@@ -674,11 +685,17 @@ footer hr {
     max-width: 80vw;
   }
 
+  footer .socials{
+    margin-bottom: 0;
+  }
+
   footer>:last-child {
     font-size: calc(14rem / 16);
+    margin: 0;
   }
 
   footer hr {
     width: 80vw;
+    margin: 24px auto;
   }
 }
