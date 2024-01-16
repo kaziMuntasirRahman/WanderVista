@@ -53,7 +53,7 @@ nav {
 }
 
 .icon-head-section img {
-  height: calc(30 / 1440 * 100vw);
+  height: calc(35 / 1440 * 100vw);
   min-height: 80%;
 }
 
@@ -550,20 +550,22 @@ footer hr {
     max-width: 100%;
   }
 
+/* destination section start */
   .destination h1 {
     font-size: 1.25rem;
   }
-
+  
   .image-container div {
     width: 100%;
     height: calc(287 / 600 * 100vw);
   }
-
+  
   .image-container img {
     width: 100%;
     height: calc(287 / 600 * 100vw);
   }
-
+  /* destination section start */
+  
   .why-choose-us>h1 {
     font-size: 1.25rem;
   }
