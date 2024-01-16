@@ -330,6 +330,101 @@ main {
 }
 
 /* why choose me section done alhamdulillah */
+/* newsLetter Section start */
+.newsletter {
+  display: flex;
+  gap: calc(24 / 1440 * 100vw);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: calc(100 / 1440 * 100vw);
+}
+
+.newsletter .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  padding: calc(40 / 1440 * 100vw);
+  border-radius: 16px;
+  border: 1px solid #FF5400;
+  max-height: 422px;
+}
+
+.newsletter .form-container>* {
+  width: 100%;
+}
+
+.newsletter .form-container>h2 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.newsletter .form-container>p {
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  /* 162.5% */
+  max-width: 350px;
+}
+
+.newsletter .form-container>hr {
+  width: 393px;
+  height: 1px;
+  background: rgba(19, 19, 24, 0.10);
+  margin: 8px 0;
+}
+
+.newsletter .form-container>input {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  padding: 16px 0 16px 20px;
+  border: 0;
+  color: rgba(19, 19, 24, 0.30);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+
+
+.newsletter .form-container>button {
+  margin-top: 8px;
+}
+
+.newsletter .form-img {
+  position: relative;
+}
+
+.newsletter .form-img .discount {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  bottom: 50px;
+  padding: 15px 20px;
+  transform: rotate(-19.628deg);
+  border-radius: 16px;
+  background: #FF5400;
+  color: #FFF;
+  width: max-content;
+}
+
+.newsletter .form-img .discount p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.newsletter .form-img .discount h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+
+
+
 /* footer section start */
 footer {
   display: flex;
@@ -479,7 +574,7 @@ footer hr {
 
   .choose-div-container {
     grid-template-columns: 1fr;
-    padding-right: 32px;
+    /* padding-right: 32px; */
   }
 
   .choose-container:last-child {
@@ -490,22 +585,35 @@ footer hr {
     font-size: 1.25rem;
   }
 
-  .icon-head-section>h1{
+  .icon-head-section>h1 {
     font-size: calc(21.5rem / 16);
   }
 
-  footer>:nth-child(2){
+  .newsletter{
+    flex-direction: column;
+  }
+
+  .newsletter>.form-container{
+    width: 100%;
+  }
+
+  .newsletter img{
+    max-width: 100%;
+  }
+
+
+
+  footer>:nth-child(2) {
     font-size: calc(14rem / 16);
     line-height: 1.5rem;
     max-width: 80vw;
   }
 
-  footer>:last-child{
+  footer>:last-child {
     font-size: calc(14rem / 16);
   }
 
-  footer hr{
+  footer hr {
     width: 80vw;
   }
-
 }
