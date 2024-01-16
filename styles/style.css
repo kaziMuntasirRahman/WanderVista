@@ -135,13 +135,16 @@ nav {
   border: 0;
 }
 
-.banner>form>input {
+.banner>form>input , .banner>form>select{
   color: rgba(19, 19, 24, 0.50);
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
 }
 
+.banner>form>select{
+  padding-left: 15px;
+}
 /* banner section as well as header section start */
 /* main section start */
 /* popular section start */
