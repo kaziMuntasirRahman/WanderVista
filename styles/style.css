@@ -87,6 +87,7 @@ nav {
   color: var(--mango);
 }
 
+
 /* navbar section done */
 /* banner section start */
 .banner {
@@ -142,9 +143,6 @@ nav {
   font-weight: 400;
 }
 
-.banner>form>select{
-  padding-left: 15px;
-}
 /* banner section as well as header section start */
 /* main section start */
 /* popular section start */
@@ -333,6 +331,60 @@ main {
 }
 
 /* why choose me section done alhamdulillah */
+/* custom section (user review) style start */
+.user-experience-container>h1{
+  margin-top: calc(100 / 1440 * 100vw);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.user-experience{
+  margin-top: calc(40 / 1440 * 100vw);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  gap: calc(20 / 1440 * 100vw);
+  border-radius: 100px;
+  background: linear-gradient(to right, #9dff0083, rgba(255, 255, 0, 0.007));
+  box-shadow: 5px 5px 10px #5A5A5D;
+}
+
+.user img:hover{
+  transform: scale(1.05);
+  transition: .5s ease-in-out;
+}
+
+.user img{
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  transition: .3s ease-in-out;
+}
+
+.user:nth-child(even){
+  flex-direction: row-reverse;
+  text-align: right;
+  background: linear-gradient(to left, #9dff0083, rgba(255, 255, 0, 0.007));
+}
+
+.user-review>h1{
+  font-weight: 700;
+}
+
+.user-review>p{
+  margin: calc(10 / 1440 * 100vw) 0;
+}
+
+.user-review>a{
+  color: black;
+}
+
 /* newsLetter Section start */
 .newsletter {
   display: flex;
@@ -516,7 +568,7 @@ footer hr {
     margin-bottom: 32px;
   }
 
-  .banner form>input {
+  .banner form>input, .banner form select {
     min-width: 100%;
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
@@ -592,6 +644,14 @@ footer hr {
 
   .icon-head-section>h1 {
     font-size: calc(21.5rem / 16);
+  }
+
+  .user-experience-container>h1, .user-review>h2{
+    transform: scale(.8);
+  }
+
+  .user{
+    gap: 5px;
   }
 
   .newsletter{
