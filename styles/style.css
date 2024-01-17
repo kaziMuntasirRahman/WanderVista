@@ -351,8 +351,8 @@ main {
   display: flex;
   align-items: center;
   gap: calc(20 / 1440 * 100vw);
-  border-radius: 100px;
-  background: linear-gradient(to right, #9dff0083, rgba(255, 255, 0, 0.007));
+  border-radius: 8px;
+  background: linear-gradient(to right, #ffffff83, rgba(255, 255, 0, 0.205));
   box-shadow: 2px 2px 1px #5A5A5D;
 }
 
@@ -366,12 +366,13 @@ main {
   height: auto;
   border-radius: 50%;
   transition: .3s ease-in-out;
+  box-shadow: 1px 1px 4px black;
 }
 
 .user:nth-child(even){
   flex-direction: row-reverse;
   text-align: right;
-  background: linear-gradient(to left, #9dff0083, rgba(255, 255, 0, 0.007));
+  background: linear-gradient(to left, #ffffff83, rgba(255, 255, 0, 0.205));
 }
 
 .user-review>h1{
