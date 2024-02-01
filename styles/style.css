@@ -396,6 +396,7 @@ main {
   display: flex;
   gap: 24px;
   margin-bottom: 8px;
+  flex-wrap: wrap;
 }
 
 .package-plan>* {
@@ -496,6 +497,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-top: calc(100 / 1440 * 100vw);
+  flex-wrap: wrap;
 }
 
 .newsletter .form-container {
@@ -757,6 +759,30 @@ footer hr {
   .icon-head-section>h1 {
     font-size: calc(21.5rem / 16);
   }
+
+
+  /* package cart section start */
+  .package-cart{
+    padding: 16px;
+    padding-top: 187px;
+  }
+
+  .package-details{
+    padding: 24px;
+    gap: 1rem;
+  }
+
+  .package-details>h1{
+    font-size: 1.25rem;
+  }
+
+  .package-details>h2{
+    font-size: 1rem;
+  }
+
+
+
+  /* user experience section start */
 
   .user-experience-container>h1,
   .user-review>h2 {
