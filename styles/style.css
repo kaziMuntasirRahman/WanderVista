@@ -136,7 +136,8 @@ nav {
   border: 0;
 }
 
-.banner>form>input , .banner>form>select{
+.banner>form>input,
+.banner>form>select {
   color: rgba(19, 19, 24, 0.50);
   text-align: left;
   font-size: 1rem;
@@ -148,6 +149,7 @@ nav {
 main {
   padding: calc(100 / 1440 * 100vw) calc(135 / 1440 * 100vw);
 }
+
 /* popular section start */
 
 .popular-tour {
@@ -331,23 +333,122 @@ main {
   grid-column: span 2;
 }
 
-/* why choose me section done alhamdulillah */
-/* custom section (user review) style start */
-.user-experience-container>h1{
-  margin-top: calc(100 / 1440 * 100vw);
+/* deals and discount section */
+.deals-n-discount {
+  margin: calc(100 / 1440 * 100vw) auto 0 auto;
+}
+
+.deals-n-discount>h1 {
+  color: #131318;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
 }
 
-.user-experience{
+.deals-n-discount>p {
+  color: rgba(19, 19, 24, 0.70);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+  /* 162.5% */
+  max-width: 643px;
+  margin: 24px auto;
+}
+
+.package-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.package-cart {
+  border-radius: 1rem;
+  width: 100%;
+  display: flex;
+  padding: 56px;
+}
+
+.package-container>:nth-child(n){
+  background: url('../Images/Group\ 39.png') lightgray 50% / cover no-repeat;
+  justify-content: flex-end;
+}
+
+.package-container>:nth-child(2n){
+  background: url('../Images/Group\ 40.png') lightgray 50% / cover no-repeat;
+  justify-content: flex-start;
+}
+
+
+.package-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 16px;
+  border: 2px solid #FFF;
+  background: rgba(255, 255, 255, 0.80);
+  backdrop-filter: blur(2.5px);
+  padding: 50px 77px 50px 50px;
+  width: 580px;
+}
+
+.package-plan {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+
+.package-plan>* {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.days-plan {
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.package-details>h1 {
+  color: #131318;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.package-details>p {
+  color: #5A5A5D;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* 162.5% */
+}
+
+.package-details>h2 {
+  color: #FF5400;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+
+/* custom section (user review) style start */
+.user-experience-container>h1 {
+  color: #131318;
+  margin-top: calc(100 / 1440 * 100vw);
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.user-experience {
   margin-top: calc(40 / 1440 * 100vw);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.user{
+.user {
   display: flex;
   align-items: center;
   gap: calc(20 / 1440 * 100vw);
@@ -356,12 +457,12 @@ main {
   box-shadow: 2px 2px 1px #5A5A5D;
 }
 
-.user img:hover{
+.user img:hover {
   transform: scale(1.05);
   transition: .5s ease-in-out;
 }
 
-.user img{
+.user img {
   max-width: 200px;
   height: auto;
   border-radius: 50%;
@@ -369,22 +470,22 @@ main {
   box-shadow: 1px 1px 4px black;
 }
 
-.user:nth-child(even){
+.user:nth-child(even) {
   flex-direction: row-reverse;
   text-align: right;
   background: linear-gradient(to left, #ffffff83, rgba(255, 255, 0, 0.205));
 }
 
-.user-review>h1{
+.user-review>h1 {
   font-weight: 700;
   margin: 0;
 }
 
-.user-review>p{
+.user-review>p {
   margin: calc(10 / 1440 * 100vw) 0;
 }
 
-.user-review>a{
+.user-review>a {
   color: black;
 }
 
@@ -560,7 +661,7 @@ footer hr {
     margin: auto 0;
   }
 
-  .banner{
+  .banner {
     margin-top: 19px;
   }
 
@@ -572,7 +673,8 @@ footer hr {
     margin: calc(8 / 600 * 100vw) 0 calc(32 / 600 * 100vw) 0;
   }
 
-  .banner form>input, .banner form select {
+  .banner form>input,
+  .banner form select {
     min-width: 100%;
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
@@ -605,7 +707,7 @@ footer hr {
     gap: calc(53 / 1440 * 100vw);
   }
 
-  .popular-tour-desc h1{
+  .popular-tour-desc h1 {
     margin-bottom: 16px;
     font-size: 1.25rem;
   }
@@ -614,22 +716,23 @@ footer hr {
     max-width: 100%;
   }
 
-/* destination section start */
+  /* destination section start */
   .destination h1 {
     font-size: 1.25rem;
   }
-  
+
   .image-container div {
     width: 100%;
     height: calc(287 / 600 * 100vw);
   }
-  
+
   .image-container img {
     width: 100%;
     height: calc(287 / 600 * 100vw);
   }
+
   /* destination section start */
-  
+
   .why-choose-us>h1 {
     font-size: 1.25rem;
   }
@@ -655,27 +758,28 @@ footer hr {
     font-size: calc(21.5rem / 16);
   }
 
-  .user-experience-container>h1, .user-review>h2{
+  .user-experience-container>h1,
+  .user-review>h2 {
     transform: scale(.75);
   }
 
-  .user{
+  .user {
     gap: 5px;
   }
 
-  .user img{
+  .user img {
     transform: scale(.9);
   }
 
-  .newsletter{
+  .newsletter {
     flex-direction: column;
   }
 
-  .newsletter>.form-container{
+  .newsletter>.form-container {
     width: 100%;
   }
 
-  .newsletter img{
+  .newsletter img {
     max-width: 100%;
   }
 
@@ -687,7 +791,7 @@ footer hr {
     max-width: 80vw;
   }
 
-  footer .socials{
+  footer .socials {
     margin-bottom: 0;
   }
 
