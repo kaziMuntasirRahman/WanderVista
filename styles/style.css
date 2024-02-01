@@ -657,7 +657,7 @@ footer hr {
 
 @media screen and (max-width: 600px) {
   .nav-links {
-    content: url('../Images/menu-bar.svg');
+    content: url('../Images/menu.png');
     min-width: 24px;
     min-height: 24px;
     margin: auto 0;
