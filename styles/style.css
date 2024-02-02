@@ -179,11 +179,13 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: end;
+  align-items: center;
   gap: calc(53 / 1440 * 100vw);
 }
 
 .popular-tour img {
-  max-width: 100%;
+  width: 100%;
+  max-height: 80%;
 }
 
 .popular-tour-desc {
@@ -234,7 +236,14 @@ main {
 }
 
 .image-container div {
+  display: flex;
   position: relative;
+  flex: 1;
+}
+
+.image-container>div>img{
+  height: 300px;
+  flex: 1;
 }
 
 .image-container div h1 {
@@ -691,6 +700,10 @@ footer hr {
   }
 
   /* destination section start */
+  .image-container{
+    flex-direction: column;
+  }
+  
   .image-container div {
     width: 100%;
     height: calc(287 / 600 * 100vw);
